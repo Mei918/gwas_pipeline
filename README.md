@@ -1,5 +1,7 @@
 # gwas-pipeline
 
+[![CI](https://github.com/Mei918/gwas_pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/Mei918/gwas_pipeline/actions/workflows/ci.yml)
+
 `gwas-pipeline` is an installable Python package that wraps a 9-step GWAS
 tutorial workflow behind a single CLI.
 
@@ -35,6 +37,11 @@ gwas-pipeline step1 --help
 gwas-pipeline step8 --help
 python -m gwas_pipeline step9 --help
 ```
+
+## CI
+
+GitHub Actions runs a small smoke-test suite on pushes and pull requests to
+make sure the packaged CLI, step registry, and legacy wrappers still load.
 
 ## Repository Layout
 
