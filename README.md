@@ -24,6 +24,14 @@ gwas-pipeline step9 ...
 
 ## Install
 
+Install from PyPI:
+
+```bash
+pip install gwas-pipeline
+```
+
+Install from a local checkout for development:
+
 ```bash
 pip install -e .
 ```

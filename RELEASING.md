@@ -1,6 +1,7 @@
 # Releasing `gwas-pipeline`
 
-This repository uses a minimal tag-driven GitHub Release flow.
+This repository uses a minimal tag-driven GitHub Release flow and supports
+manual PyPI publishing with `twine`.
 
 ## Before tagging
 
@@ -16,6 +17,31 @@ PYTHONPATH=src python3 -m gwas_pipeline doctor --help
 ```
 
 4. Commit and push `main`
+
+## Build and verify distributions locally
+
+```bash
+python -m pip install -e ".[dev]"
+python -m build
+python -m twine check dist/*
+```
+
+## Upload to PyPI manually
+
+```bash
+python -m twine upload dist/*
+```
+
+When prompted by `twine`, use:
+
+- username: `__token__`
+- password: your PyPI API token
+
+If you want to test the publish flow first:
+
+```bash
+python -m twine upload --repository testpypi dist/*
+```
 
 ## Create a release tag
 
