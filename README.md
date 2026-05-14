@@ -43,6 +43,9 @@ python -m gwas_pipeline step9 --help
 GitHub Actions runs a small smoke-test suite on pushes and pull requests to
 make sure the packaged CLI, step registry, and legacy wrappers still load.
 
+Releases can also be created from tags such as `v0.3.1`; see
+`RELEASING.md` for the minimal release flow.
+
 ## Repository Layout
 
 - `src/gwas_pipeline/`
@@ -55,6 +58,8 @@ make sure the packaged CLI, step registry, and legacy wrappers still load.
   Short command-first server runbook.
 - `server_setup.md`
   Conda environment, install, and deployment notes.
+- `RELEASING.md`
+  Minimal tag and GitHub Release process.
 
 ## Tested Status
 
