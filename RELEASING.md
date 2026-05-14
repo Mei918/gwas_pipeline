@@ -50,6 +50,21 @@ git tag v0.3.1
 git push origin v0.3.1
 ```
 
+## Copy-paste release sequence
+
+```bash
+cd "/Users/may/Documents/New project/gwas_tutorial_repo"
+python -m pip install -e ".[dev]"
+python -m build
+python -m twine check dist/*
+python -m twine upload dist/*
+git add pyproject.toml src/gwas_pipeline/__init__.py CHANGELOG.md README.md RELEASING.md
+git commit -m "Release 0.3.1"
+git push origin main
+git tag v0.3.1
+git push origin v0.3.1
+```
+
 ## What happens next
 
 Pushing a `v*` tag triggers `.github/workflows/release.yml`, which:

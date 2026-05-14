@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.1 - 2026-05-14
+
+- Added a PyPI publishing workflow for manual GitHub Actions releases.
+- Tightened CI to install `.[dev]` and build distributions during validation.
+- Added `twine` to development dependencies.
+- Documented PyPI installation in `README.md`.
+- Expanded `RELEASING.md` with local build, `twine check`, TestPyPI, and PyPI
+  upload commands.
+
 ## 0.3.0 - 2026-05-11
 
 - Created a standalone `gwas_pipeline` package for the GWAS tutorial workflow.

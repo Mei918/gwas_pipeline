@@ -1,6 +1,7 @@
 # gwas-pipeline
 
 [![CI](https://github.com/Mei918/gwas_pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/Mei918/gwas_pipeline/actions/workflows/ci.yml)
+[![PyPI version](https://img.shields.io/pypi/v/gwas-pipeline.svg)](https://pypi.org/project/gwas-pipeline/)
 
 `gwas-pipeline` is an installable Python package that wraps a 9-step GWAS
 tutorial workflow behind a single CLI.
